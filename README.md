@@ -61,7 +61,7 @@ Production CRM & invoicing — lead pipeline, e-mail automation, affiliate modul
 <tr>
 <td width="50%" valign="top">
 
-**🤖 [Jarvis OS](https://github.com/dyntr/JarvisOSApp)**
+**🤖 Jarvis OS** &nbsp;`private`
 A personal "second-brain" operating system — native dashboard, voice chat & a 24/7 agent engine.
 `Swift` · `SwiftUI` · `Python`
 
