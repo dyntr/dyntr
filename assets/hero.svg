@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 430" width="1280" height="430" role="img" aria-label="Patrick Dyntr — full-stack and AI developer">
+  <defs>
+    <clipPath id="frame"><rect width="1280" height="430" rx="26"/></clipPath>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#B69CFF"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C5CFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#CDBBFF" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="blobA" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7C5CFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobB" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#4430B5" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#4430B5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0v36" fill="none" stroke="#FFFFFF" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+    <style>
+      .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace; }
+      .blobA { animation: driftA 22s ease-in-out infinite alternate; }
+      .blobB { animation: driftB 26s ease-in-out infinite alternate; }
+      @keyframes driftA { from { transform: translate(0,0) scale(1); } to { transform: translate(90px,40px) scale(1.15); } }
+      @keyframes driftB { from { transform: translate(0,0) scale(1.1); } to { transform: translate(-70px,-30px) scale(.95); } }
+      .sweep { animation: sweep 5.2s cubic-bezier(.6,0,.4,1) infinite; }
+      @keyframes sweep { 0% { transform: translateX(-560px); } 55%,100% { transform: translateX(620px); } }
+      .cursor { animation: blink 1.05s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .role { opacity: 0; animation: cycle 16s infinite; }
+      .r2 { animation-delay: 4s; } .r3 { animation-delay: 8s; } .r4 { animation-delay: 12s; }
+      @keyframes cycle {
+        0% { opacity: 0; transform: translateY(8px); }
+        3%,22% { opacity: 1; transform: translateY(0); }
+        25%,100% { opacity: 0; transform: translateY(-8px); }
+      }
+      .tl { transform: scaleX(1); transform-box: fill-box; transform-origin: right center; }
+      .t1 { animation: wipe 12s infinite; }
+      .t2 { animation: wipe 12s infinite; animation-delay: 1.1s; }
+      .t3 { animation: wipe 12s infinite; animation-delay: 2.2s; }
+      .t4 { animation: wipe 12s infinite; animation-delay: 3.3s; }
+      @keyframes wipe {
+        0% { transform: scaleX(1); }
+        8%,88% { transform: scaleX(0); }
+        96%,100% { transform: scaleX(1); }
+      }
+      .ok { opacity: 0; animation: ok 12s infinite; }
+      @keyframes ok { 0%,38% { opacity: 0; } 44%,88% { opacity: 1; } 94%,100% { opacity: 0; } }
+      .pulse { animation: pulse 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes pulse { 0%,100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.5); opacity: .35; } }
+      .orbit { animation: orbit 30s linear infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes orbit { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        .blobA,.blobB,.sweep,.cursor,.role,.t1,.t2,.t3,.t4,.ok,.pulse,.orbit { animation: none; }
+        .role { opacity: 0; } .r1 { opacity: 1; }
+        .tl { transform: scaleX(0); } .ok { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="430" fill="#0B0B10"/>
+    <g class="blobA"><circle cx="1040" cy="70" r="420" fill="url(#blobA)"/></g>
+    <g class="blobB"><circle cx="140" cy="420" r="380" fill="url(#blobB)"/></g>
+    <rect width="1280" height="430" fill="url(#grid)"/>
+
+    <!-- levá část: identita -->
+    <text x="72" y="96" class="mono" font-size="15" fill="#8B84A6">~/portfolio <tspan fill="#B69CFF">$</tspan> whoami</text>
+
+    <text x="70" y="172" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="68" font-weight="800" letter-spacing="-1.5" fill="#F2EFFC">Patrick <tspan fill="url(#accent)">Dyntr</tspan></text>
+
+    <!-- animovaná linka pod jménem -->
+    <g>
+      <rect x="72" y="196" width="560" height="3" rx="1.5" fill="#2A2440"/>
+      <g clip-path="url(#underline)">
+        <clipPath id="underline"><rect x="72" y="194" width="560" height="7" rx="3"/></clipPath>
+        <rect class="sweep" x="72" y="194" width="240" height="7" fill="url(#sheen)"/>
+      </g>
+    </g>
+
+    <text x="72" y="242" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="21" fill="#A9A3C2">Full-stack &amp; AI developer — from first commit to production.</text>
+
+    <!-- cyklující role -->
+    <g class="mono" font-size="19">
+      <text x="72" y="292" fill="#6E6790">&gt;</text>
+      <text class="role r1" x="94" y="292" fill="#CDBBFF">building AI-native products<tspan class="cursor" fill="#7C5CFF">▌</tspan></text>
+      <text class="role r2" x="94" y="292" fill="#CDBBFF">shipping native macOS &amp; iOS apps<tspan class="cursor" fill="#7C5CFF">▌</tspan></text>
+      <text class="role r3" x="94" y="292" fill="#CDBBFF">running live e-commerce<tspan class="cursor" fill="#7C5CFF">▌</tspan></text>
+      <text class="role r4" x="94" y="292" fill="#CDBBFF">orchestrating autonomous agents<tspan class="cursor" fill="#7C5CFF">▌</tspan></text>
+    </g>
+
+    <!-- tech chips -->
+    <g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13.5">
+      <rect x="72" y="330" width="107" height="32" rx="9" fill="#161226" stroke="#2E2749"/>
+      <text x="125" y="351" fill="#C9C3E4" text-anchor="middle">TypeScript</text>
+      <rect x="189" y="330" width="72" height="32" rx="9" fill="#161226" stroke="#2E2749"/>
+      <text x="225" y="351" fill="#C9C3E4" text-anchor="middle">Swift</text>
+      <rect x="271" y="330" width="83" height="32" rx="9" fill="#161226" stroke="#2E2749"/>
+      <text x="312" y="351" fill="#C9C3E4" text-anchor="middle">Python</text>
+      <rect x="364" y="330" width="88" height="32" rx="9" fill="#161226" stroke="#2E2749"/>
+      <text x="408" y="351" fill="#C9C3E4" text-anchor="middle">Next.js</text>
+      <rect x="462" y="330" width="103" height="32" rx="9" fill="#1A1330" stroke="#7C5CFF" stroke-opacity=".55"/>
+      <text x="513" y="351" fill="#CDBBFF" text-anchor="middle">AI agents</text>
+    </g>
+
+    <!-- pravá část: terminál -->
+    <g>
+      <rect x="768" y="84" width="442" height="272" rx="16" fill="#12101C" stroke="#2A2440"/>
+      <rect x="768" y="84" width="442" height="40" rx="16" fill="#181527"/>
+      <rect x="768" y="108" width="442" height="16" fill="#181527"/>
+      <circle cx="794" cy="104" r="5.5" fill="#FF5F57"/>
+      <circle cx="814" cy="104" r="5.5" fill="#FEBC2E"/>
+      <circle cx="834" cy="104" r="5.5" fill="#28C840"/>
+      <text x="989" y="109" class="mono" font-size="12.5" fill="#6E6790" text-anchor="middle">patrick@dyntr — zsh</text>
+
+      <g class="mono" font-size="14.5">
+        <text x="792" y="158" fill="#8B84A6"><tspan fill="#B69CFF">$</tspan> ship --production</text>
+        <rect class="tl t1" x="792" y="146" width="200" height="16" fill="#12101C"/>
+
+        <text x="792" y="190" fill="#8B84A6">→ build <tspan fill="#C9C3E4">vendaro</tspan> · <tspan fill="#C9C3E4">sentinel</tspan> · <tspan fill="#C9C3E4">vlna</tspan></text>
+        <rect class="tl t2" x="792" y="178" width="330" height="16" fill="#12101C"/>
+
+        <text x="792" y="222" fill="#8B84A6">→ tests <tspan fill="#28C840">passed</tspan> · lint <tspan fill="#28C840">clean</tspan></text>
+        <rect class="tl t3" x="792" y="210" width="290" height="16" fill="#12101C"/>
+
+        <text x="792" y="254" fill="#8B84A6">→ deploy edge · <tspan fill="#C9C3E4">cloudflare</tspan></text>
+        <rect class="tl t4" x="792" y="242" width="270" height="16" fill="#12101C"/>
+
+        <g class="ok">
+          <text x="792" y="296" fill="#28C840">✓ shipped to production</text>
+          <text x="792" y="326" fill="#6E6790">40+ projects · Prague, CZ 🇨🇿</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- orbitální dekor u terminálu -->
+    <g class="orbit">
+      <g transform="translate(1216,72)">
+        <circle r="26" fill="none" stroke="#7C5CFF" stroke-opacity=".35"/>
+        <circle class="pulse" cx="26" cy="0" r="4" fill="#B69CFF"/>
+      </g>
+    </g>
+
+    <!-- spodní gradient linka -->
+    <rect x="0" y="426" width="1280" height="4" fill="url(#accent)"/>
+  </g>
+</svg>

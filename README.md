@@ -1,13 +1,7 @@
-<!-- PROFILE README — patří do repo dyntr/dyntr (README.md). Renderuje se na github.com/dyntr -->
+<!-- PROFILE README — repo dyntr/dyntr. Hero + footer jsou vlastní animovaná SVG v assets/ (žádná závislost na externích službách). -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C5CFF,100:B69CFF&height=200&section=header&text=Patrick%20Dyntr&fontColor=ffffff&fontSize=58&desc=Full-stack%20%26%20AI%20developer%20%C2%B7%20I%20turn%20ideas%20into%20shipped%20products&descAlignY=64&descSize=18&animation=fadeIn" width="100%"/>
-</p>
-
-<p align="center">
-  <a href="https://github.com/dyntr">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1200&color=7C5CFF&center=true&vCenter=true&width=760&lines=Full-stack+%26+AI+developer;I+build+e-commerce+platforms;I+ship+native+macOS+%26+iOS+apps;I+build+autonomous+AI+agents;Od+prvn%C3%ADho+commitu+do+produkce" alt="typing" />
-  </a>
+  <img src="assets/hero.svg" width="100%" alt="Patrick Dyntr — full-stack & AI developer"/>
 </p>
 
 <p align="center">
@@ -92,7 +86,7 @@ Live auto-parts e-commerce I build & run — Shopify storefront, catalog sync & 
 </tr>
 </table>
 
-<sub>Also building · Dále stavím: **Vlna** (native bulk-SMS app) · **Pulse** (macOS menu-bar monitor) · **AuraWidgetStudio** (iOS widget studio) · **Agenthaus** (no-code AI agent builder) · **EbookForge** · **NicheCart**</sub>
+<sub>Also building · Dále stavím: **[Vlna](https://github.com/dyntr/Vlna)** (native bulk-SMS app) · **[Pulse](https://github.com/dyntr/Pulse)** (macOS menu-bar monitor) · **[AuraWidgetStudio](https://github.com/dyntr/AuraWidgetStudio)** (iOS widget studio) · **[EbookForge](https://github.com/dyntr/EbookForge)** · **[NicheCart](https://github.com/dyntr/NicheCart)**</sub>
 
 ---
 
@@ -124,20 +118,13 @@ Live auto-parts e-commerce I build & run — Shopify storefront, catalog sync & 
 
 ---
 
-### 📊 GitHub in numbers &nbsp;·&nbsp; GitHub v číslech
+### 🐍 Contributions
 
-<p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=dyntr&show_icons=true&hide_border=true&title_color=7C5CFF&icon_color=B69CFF&text_color=9ca3af&bg_color=0D0D0F"/>
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=dyntr&hide_border=true&background=0D0D0F&stroke=7C5CFF&ring=7C5CFF&fire=B69CFF&currStreakLabel=7C5CFF&sideLabels=9ca3af&dates=6b7280"/>
-</p>
-<p align="center">
-  <img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dyntr&layout=compact&hide_border=true&title_color=7C5CFF&text_color=9ca3af&bg_color=0D0D0F&langs_count=8"/>
-</p>
-
-<!-- Contribution snake — vygeneruje GitHub Action (viz .github/workflows/snake.yml) -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/dyntr/dyntr/output/github-snake-dark.svg" alt="contribution snake"/>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dyntr/dyntr/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dyntr/dyntr/output/github-snake.svg">
+  <img src="https://raw.githubusercontent.com/dyntr/dyntr/output/github-snake.svg" alt="contribution snake" width="100%">
+</picture>
 
 ---
 
@@ -149,5 +136,5 @@ Live auto-parts e-commerce I build & run — Shopify storefront, catalog sync & 
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:B69CFF,100:7C5CFF&height=110&section=footer" width="100%"/>
+  <img src="assets/footer.svg" width="100%" alt=""/>
 </p>

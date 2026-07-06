@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 120" width="1280" height="120" role="img" aria-label="Footer">
+  <defs>
+    <clipPath id="f"><rect width="1280" height="120" rx="26"/></clipPath>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C5CFF"/><stop offset="1" stop-color="#B69CFF"/>
+    </linearGradient>
+    <linearGradient id="sheen2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#CDBBFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#CDBBFF" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#CDBBFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7C5CFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .s { animation: sw 6s cubic-bezier(.6,0,.4,1) infinite; }
+      @keyframes sw { 0% { transform: translateX(-1280px); } 60%,100% { transform: translateX(1280px); } }
+      @media (prefers-reduced-motion: reduce) { .s { animation: none; opacity: 0; } }
+    </style>
+  </defs>
+  <g clip-path="url(#f)">
+    <rect width="1280" height="120" fill="#0B0B10"/>
+    <ellipse cx="640" cy="130" rx="700" ry="90" fill="url(#glow)"/>
+    <rect x="0" y="0" width="1280" height="4" fill="url(#acc)"/>
+    <rect class="s" x="0" y="0" width="640" height="4" fill="url(#sheen2)"/>
+    <text x="640" y="58" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="15" fill="#A9A3C2">Built with care in <tspan fill="#CDBBFF">Prague</tspan> · always shipping</text>
+    <text x="640" y="86" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13" fill="#5F5980">github.com/<tspan fill="#B69CFF">dyntr</tspan></text>
+  </g>
+</svg>

@@ -1,11 +1,10 @@
-# .github/workflows/snake.yml  →  patří do repo dyntr/dyntr
-# Generuje animovaný "contribution snake" SVG do větve `output` (na ni odkazuje profilové README).
+# Generuje contribution snake (dark + light) do větve `output`.
 name: Generate contribution snake
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # každý den ve 3:00 UTC
-  workflow_dispatch:        # + ruční spuštění
+    - cron: "0 3 * * *"
+  workflow_dispatch:
   push:
     branches: [ main ]
 
@@ -22,6 +21,7 @@ jobs:
         with:
           github_user_name: dyntr
           outputs: |
+            dist/github-snake.svg?color_snake=7C5CFF
             dist/github-snake-dark.svg?palette=github-dark&color_snake=7C5CFF&color_dots=161b22,7C5CFF,9E7BFF,B69CFF,ffffff
 
       - name: Push to output branch
